@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+}
+.card {
+  background-image: url(./svg/background.svg);
+  font-family: "League Spartan";
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 1136px;
+}
+.upperSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.users {
+  padding: 70px;
+}
+.users h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 40px;
+}
+.users p {
+  color: hsl(303, 10%, 53%);
+  margin: 25px 0px 0px 0px;
+}
+.ratings {
+  padding: 75px 70px 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews {
+  background-color: hsl(309, 21%, 87%);
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.reviews object {
+  margin-left: 3px;
+}
+.reviews span {
+  color: hsl(300, 43%, 22%);
+  padding-left: 20px;
+  font-weight: 900;
+}
+.reviews:nth-child(2) {
+  transform: translateX(20px);
+}
+.reviews:nth-child(3) {
+  transform: translateX(40px);
+}
+
+.lowerSection {
+  display: flex;
+  padding: 10px 40px 60px 40px;
+  flex-wrap: wrap;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  padding: 30px;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+.intro p:nth-child(1) {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.intro p:nth-child(2) {
+  color: hsl(333, 80%, 67%);
+  margin-bottom: 15px;
+}
+.feedback p {
+  color: hsl(300, 24%, 96%);
+}
+.test1 {
+  display: flex;
+  flex-direction: row;
+}
+.pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: red;
+  background-size: cover;
+  margin-right: 10px;
+  background-image: url(/images/image-colton.jpg);
+}
+
+.irene {
+  background-image: url(/images/image-irene.jpg);
+}
+.Anne {
+  background-image: url(/images/image-anne.jpg);
+}
+.feedback:nth-child(2) {
+  transform: translateY(20px);
+}
+.feedback:nth-child(3) {
+  transform: translateY(40px);
+}
+
+@media (max-width: 1135px) {
+  .card {
+    width: 60%;
+  }
+  .upperSection {
+    flex-direction: column;
+  }
+  .users {
+    text-align: center;
+    padding: 30px;
+  }
+  .ratings {
+    padding: 30px;
+    align-items: center;
+  }
+  .reviews:nth-child(2) {
+    transform: translateX(0px);
+  }
+  .reviews:nth-child(3) {
+    transform: translateX(0px);
+  }
+  .reviews {
+    width: 70%;
+    text-align: center;
+  }
+  .lowerSection {
+    padding: 0px 30px 50px 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback {
+    flex: 1 1 0;
+  }
+}
+@media (max-width: 985px) {
+  .reviews span {
+    display: block;
+    margin-top: 4px;
+  }
+}
